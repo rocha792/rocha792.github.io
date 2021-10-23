@@ -1,0 +1,30 @@
+@media (min-width:500px){
+    height nav {
+        width: 50px;
+    }
+    header #maxuMovil{
+        display: block;
+    }
+    header #menuWEB{
+        display: none;
+    }
+    #about .col, #contacto .col {
+        width: 100%;
+    }
+    #portafolio .item{
+        width: 100%;
+    }
+    #about, #contacto, #portafolio {
+        height: auto;
+    }
+    #main video{
+        display: none;
+    }
+    #main #overlay{
+        background-image: url(../img/personaje.png);
+    }
+}
+@media (max-widht: 700px
+) {
+
+}
