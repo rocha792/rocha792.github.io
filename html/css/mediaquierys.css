@@ -1,0 +1,33 @@
+@media (min-width: 500px){
+    header nav{
+        width: 50px;
+    }
+    header #menuMovil{
+        display: block;
+    }
+    header #menuWEB{
+        display: none;
+    }
+    #about .col, #inicio .col{
+        width: 100%;
+    }
+    #about .col, #Anecdota .col{
+        width: 100%;
+    }
+    #about .col, #Historia .col{
+        width: 100%;
+    }
+    #about .col, #Creepy .col{
+        width: 100%;
+    }
+    #main video{
+        display: none;
+    }
+    #main #overlay{
+        background-image: url(../imagenes/Creppypasta2.jpg);
+    }
+}
+@media (max-widht: 700px
+) {
+
+}

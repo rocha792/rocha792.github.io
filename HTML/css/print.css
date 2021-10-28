@@ -1,6 +1,8 @@
-#main video{
-    display: none;
-}
-body{
-    background-color: white;
+@media print{
+    #main video{
+        display: none;
+    }
+    body{
+        background-color: teal;
+    }
 }

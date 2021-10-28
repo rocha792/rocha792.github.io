@@ -1,0 +1,219 @@
+:root{
+    --min-color: rgb(255, 57, 22);
+    --text-color: rgb(47, 47, 47);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*Parte Superiro de la pagina WEB*/
+body{
+    background-color: black;
+    font-family: 'Qahiri', sans-serif;
+}
+h1{
+    font-family: 'Philosopher', sans-serif;
+}
+header{
+    width: 100%;
+    height: 75px;
+    background-color: var(--min-color);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 4;
+}
+header #logo{
+    font-size: 1rem;
+    margin: 15px;
+    margin-left: 8%;
+    width: 250px;
+    /*background-color: rgb(32, 32, 32);*/
+}
+header #nav{
+    margin: 10px;
+    margin-right: 10%;
+    width: 400px;
+    /*background-color: rgb(32, 32, 32);*/
+}
+
+/*Oultar menu Movil*/
+header #menuMovil{
+    display: none;
+}
+
+
+header nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 5px;
+    padding: 5px;
+    transition: 0.6s ease-in all;
+
+}
+header nav ul li a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    color: crimson;
+}
+header nav ul li :hover{
+    opacity: 0.8;
+    background-color: peachpuff;
+    border-radius: 5px;
+}
+header nav ul li a:hover{
+    color: var(--min-color);
+}
+section#main{
+    background-color: black;
+    height: 100vh;
+}
+#main video{
+    width: 100%;
+    height: 100%;
+}
+#main #overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: 3;
+}
+#main #overlay h2{
+    margin-top: 200px;
+    color: crimson;
+    text-align: center;
+    font-size: 6rem;
+}
+#main #overlay h3{
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'open-sans', sans-serif;
+    font-size: 2rem;
+}
+.btn{
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: black;
+}
+.btnPrimary{
+    background-color: var(--min-color);
+    color: white;
+    text-transform: uppercase;
+}
+a.btn{
+    text-decoration: none;
+    color: whitesmoke;
+}
+/*Fin de la parte Superiro de la pagina WEB y el Video de donda*/
+
+
+/*Seccion Creepypastas*/
+#Creepy{
+    width: 80%;
+    height: 700px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#Creepy .col{
+    float: left;
+    width: 50%;
+    color: crimson;
+    font-size: 1.5rem;
+}
+#Creepy > h2{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 30px;
+    font-family: 'open-sans', sans-serif;
+    color: crimson;
+}
+#Creepy > .col >h2{
+    font-size: 2rem;
+    font-family: 'open-sans', sans-serif;
+    font-weight: lighter;
+}
+
+
+
+/*Seccion Anecdotas*/
+#Anecdota{
+    width: 80%;
+    height: 700px;
+    padding-left: 10%;
+    /*padding-right: 10%;*/
+}
+#Anecdota .col{
+    float: left;
+    width: 50%;
+    color: crimson;
+    font-size: 1.5rem;
+}
+#Anecdota > h3{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 30px;
+    font-family: 'open-sans', sans-serif;
+    color: crimson;
+}
+#Anecdota > .col >h3{
+    font-size: 2rem;
+    font-family: 'open-sans', sans-serif;
+    font-weight: lighter;
+}
+
+
+/*Hechos Historicos*/
+#Historia{
+    width: 80%;
+    height: 700px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#Historia .col{
+    float: left;
+    width: 50%;
+    color: crimson;
+    font-size: 1.5rem;
+}
+#Historia > h4{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 30px;
+    font-family: 'open-sans', sans-serif;
+    color: crimson;
+}
+#Historia > .col >h4{
+    font-size: 2rem;
+    font-family: 'open-sans', sans-serif;
+    font-weight: lighter;
+}
+
+/*Contacto*/
+#Contacto{
+    width: 100%;
+    height: 350px;
+    padding-left: 10%;
+    background-color: #1b1b1c;
+    min-height: 10%;
+    font-size: 1.5rem;
+    color: var(--min-color);
+    font-family: 'Philosopher', sans-serif;
+}
+.btnSec{
+    background-color: var(--min-color);
+    color: white;
+    text-transform: uppercase;
+}
+a.btn{
+    text-decoration: none;
+    color: whitesmoke;
+}
