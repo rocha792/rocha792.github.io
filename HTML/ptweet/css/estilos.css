@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main .col{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    height: 100vh;
+    background-image: url(../img/fondopeluche.png);
+    background-size: 30% 30%;
+    background-position: -10% 0;
+}
+main h4{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    margin-left: 50px;
+    margin-top: 5%;
+    background-image: url(../img/ptweetlogo.png);
+}
+main .col:first-child{
+    flex: 2;
+    background-image: url(../img/fondo.png);
+    background-size: 130% 100%;
+    background-position: -10% 0;
+}
