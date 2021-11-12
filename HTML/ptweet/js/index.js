@@ -1,7 +1,19 @@
 window.onload=()=>{
     let usuario= JSON.parse(localStorage.getItem("usuario"));
-    document.getElementById("imaUser").scr="./img/"+usuario.imagen;
+    document.getElementById("imgUser").src="./img/"+usuario.imagen;
     let arrayTw=[];
+
+    var xobj= new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET','./js/twetts.json',true);
+    xobj.onreadystatechange=function(){
+        if(xobj.readyState == 4 && xobj.status=='200'){
+            arrayTw=JSON.parse(xobj.responseText);
+            console.log(arrayTw);
+        }
+    }
+    xobj.send(null);
+
     //console.log(usuario);
     //document.getElementById("usuario").innerHTML="Hola "+usuario.nombre;
     let txtTweet=document.getElementById("txtTweet");
