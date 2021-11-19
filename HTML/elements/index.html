@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    //Sory lo voy a terminar despues pero bien 😅
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div id="data">
+        <h1 id="txtElemento">Elemento</h1>
+        <h2 id="txtSimbolo">Simbolo</h2>
+        <p id="txtDescr">Descripción</p>
+    </div>
+    <ol class="periodic-table">
+        <li class="hydrogen" data-id="1" data-sim="H" data-name="Hidrogeno" data-descr="El Elemento esencial">
+            <abbr title="Hydrogen">H</abbr>
+        </li>
+        <li id="helium" class="noble-gas" data-id="2" data-sim="Helio" data-name="Hidrogeno" data-descr="El Elemento esencial">
+            <abbr title="Helium">He</abbr>
+            <span>2</span>
+        </li>
+        <li class="alkali" data-id="3" data-sim="Li" data-name="Litio" data-descr="El Elemento que se usa en pilas">
+            <abbr title="Lithium">Li</abbr >
+        </li>
+        <li class="alkaline" data-id="4" data-sim="Be" data-name="Berilio" data-descr="El Elemento usado en dispocitivos tecnológicos">
+            <abbr title="Beryllium">Be</abbr >
+        </li>
+        <li id="boron" class="metalloid" data-id="5" data-sim="B" data-name="Boro" data-descr="El Elemento utilisado para los cultivos">
+            <abbr title="Boron">B</abbr>
+        </li>
+        <li class="polyatomic-non-metal" data-id="6" data-sim="C" data-name="Carbono" data-descr="El Elemento se encuentrar en todas formas de vida y natural">
+            <abbr title="Carbon">C</abbr>
+        </li>
+        <li class="diatomic-nonmetal" data-id="7" data-sim="N" data-name="Nitrogeno" data-descr="El Elemento se usa en fetilisantes y para el turbo">
+            <abbr title="Nitrogen">N</abbr>
+        </li>
+        <li class="diatomic-nonmetal" data-id="8" data-sim="O" data-name="Oxigeno" data-descr="El Elemento esencial">
+            <abbr title="Oxygen">O</abbr>
+        </li>
+        <li class="diatomic-nonmetal" data-id="9" data-sim="F" data-name="Fluor" data-descr="El Elemento que esta en la pasta de dientes">
+            <abbr title="Fluorine">F</abbr>
+        </li>
+        <li class="noble-gas" data-id="10" data-sim="Ne" data-name="Neon" data-descr="El Elemento gas comprimido que dan bonitos colores a los carteles">
+            <abbr title="Neon">Ne</abbr>
+        </li>
+        <li class="alkali" data-id="11" data-sim="Na" data-name="Sodio" data-descr="El Elemento que se usa para dar sacon en la cosina">
+            <abbr title="Sodium">Na</abbr>
+        </li>
+        <li class="alkaline" data-id="12" data-sim="Mg" data-name="Magnesio" data-descr="El Elemento que se usa en medicinas">
+            <abbr title="Magnesium">Mg</abbr>
+        </li>
+        <li id="aluminium" data-id="13" data-sim="Al" data-name="Aluminio" data-descr="El metal mas blando donde tomamos soda">
+            <abbr title="Aluminium">Al</abbr>
+        </li>
+        <li class="metalloid" data-id="14" data-sim="Si" data-name="Silicio" data-descr="El Elemento que se usa para dispocitivos tecnológicos">
+            <abbr title="Silicon">Si</abbr>
+        </li>
+        <li class="polyatomic-non-metal" data-id="15" data-sim="P" data-name="Fosforo" data-descr="El Elemento que se usa para hacer fuego">
+            <abbr title="Phosphorus">P</abbr>
+        </li>
+        <li class="polyatomic-non-metal" data-id="16" data-sim="S" data-name="Azufre" data-descr="El Elemento uso para tratamientos de la piel">
+            <abbr title="Sulphur">S</abbr>
+        </li>
+        <li class="diatomic-nonmetal" data-id="17" data-sim="Cl" data-name="Cloro" data-descr="El Elemento que despinta la ropa y la limpiesa">
+            <abbr title="Chlorine">Cl</abbr>
+        </li>
+        <li class="noble-gas" data-id="18" data-sim="Ar" data-name="Argon" data-descr="El Elemento que se usa para dar ilumniacion a las luces led">
+            <abbr title="Argon">Ar</abbr>
+        </li>
+        <li class="alkali" data-id="19" data-sim="K" data-name="Potasio" data-descr="El Elemento que se encuentan en los alimentos como los platanos">
+            <abbr title="Potassium">K</abbr>
+        </li>
+        <li class="alkaline" data-id="20" data-sim="Ca" data-name="Calcio" data-descr="El Elemento que se encuentra en los huesos">
+            <abbr title="Calcium">Ca</abbr>
+        </li>
+        <li class="metal" data-id="21" data-sim=Sc" data-name="Escandio" data-descr="El Elemento se utiliza en casi todos los objetos de uso diario como la bisicleta">
+            <abbr title="Scandium">Sc</abbr>
+        </li>
+        <li class="metal" data-id="22" data-sim="Ti" data-name="Titanio" data-descr="El Elemento un metal bastante duro">
+            <abbr title="Titanium">Ti</abbr>
+        </li>
+        <li class="metal" data-id="23" data-sim="V" data-name="Vanadio" data-descr="El Elemento uso para herramientas"> 
+            <abbr title="Vanadium">Ti</abbr>
+        </li>
+        <li class="metal" data-id="24" data-sim="Cr" data-name="Cromo" data-descr="El Elemento que se usa en piesas de autos">
+            <abbr title="Chromium">Cr</abbr>
+        </li>
+        <li class="metal" data-id="25" data-sim="Mn" data-name="Manganeso" data-descr="El Elemento que se usa en las pilas">
+            <abbr title="Manganese">Mn</abbr>
+        </li>
+        <li class="metal" data-id="26" data-sim="Fe" data-name="Hierro" data-descr="El Elemento que se usa en casi todo los objetos metalicos">
+            <abbr title="Iron">Fe</abbr>
+        </li>
+        <li class="metal" data-id="27" data-sim="H" data-name="Cobalto" data-descr="El Elemento um fierro de color azul muy bonito">
+            <abbr title="Cobalt">Co</abbr>
+        </li>
+        <li class="metal" data-id="28" data-sim="Ni" data-name="Niquel" data-descr="El Elemento se usa para hacer monedas">
+            <abbr title="Nickel">Ni</abbr>
+        </li>
+        <li class="metal" data-id="29" data-sim="Cu" data-name="Cobre" data-descr="El Elemento que se usa para los cabledos electronicos">
+            <abbr title="Copper">Cu</abbr>
+        </li>
+        <li class="metal" data-id="30" data-sim="Ni" data-name="Zinc" data-descr="El Elemento se usa para las lamilas de los techos">
+            <abbr title="Zinc">Zn</abbr>
+        </li>
+        <li class="matal" data-id="31" data-sim="Ga" data-name="Galio" data-descr="El Elemento se usan en micro led">
+            <abbr title="Gallium">Ga</abbr>
+        </li>
+        <li class="metalloid" data-id="32" data-sim="Ge" data-name="Germanio" data-descr="Se usa en componentes tecnológicos">
+            <abbr title="Germanium">Ge</abbr>
+        </li>
+        <li class="metalloid" data-id="33" data-sim="As" data-name="Arenico" data-descr="El elemento es muy venenoso">
+            <abbr title="Arsenic">As</abbr>
+        </li>
+        <li class="polyatomic-non-metal" data-id="34" data-sim="Se" data-name="Selenio" data-descr="Se encuentra en alimentos de origen animal">
+            <abbr title="Selenium">Se</abbr>
+        </li>
+        <li class="diatomic-nonmetal" data-id="35" data-sim="Br" data-name="Bromo" data-descr="Se usa en la gasonlina">
+            <abbr title="Bromide">Br</abbr>
+        </li>
+        <li class="noble-gas" data-id="36" data-sim="Kr" data-name="Cripton" data-descr="El Elemento se usa para las led (Es la debilidad de Super-man)">
+            <abbr title="Krypton">Kr</abbr>
+        </li>
+        <li class="alkali" data-id="37" data-sim="Rb" data-name="Rubidio" data-descr="Se usa en pirotecnia">
+            <abbr title="Rubidium">Rb</abbr>
+        </li>
+        <li class="alkaline" data-id="38" data-sim="Sr" data-name="Estronico" data-descr="Es usado en fuego pirotecnia y la medicinas">
+            <abbr title="Strontium">Sr</abbr>
+        </li>
+        <li class="metal" data-id="39" data-sim="Y" data-name="Itrio" data-descr="Es usado para hacetes para automiviles "> 
+            <abbr title="Yttrium">Y</abbr>
+        </li>
+        <li class="mata" data-id="40" data-sim="Zr" data-name="Criconio" data-descr="Es usado para hacer imlantes dentales">
+            <abbr title="Zirconium">Zr</abbr>
+        </li>
+        <li class="metal" data-id="41" data-sim="Nb" data-name="Niobio" data-descr="Se puede usar para hacer joyeria">
+            <abbr title="Niobium">Nb</abbr>
+        </li>
+        <li class="metal" data-id="42" data-sim="Mo" data-name="Molibdeno" data-descr="Se puede usara para crear municiones para armas">
+            <abbr title="Molybdenum">Mo</abbr>
+        </li>
+        <li class="metal" data-id="43" data-sim="Tc" data-name="Tecnecio" data-descr="Es uasdos para sacar radiografias">
+            <abbr title="Technetium">Tc</abbr>
+        </li>
+        <li class="metal" data-id="44" data-sim="Ru" data-name="Rutenio" data-descr="Es usado para la creacion de cableado de señales de tv">
+            <abbr title="Ruthenium">Ru</abbr>
+        </li>
+        <li class="metal" data-id="45" data-sim="Rh" data-name="Rodio" data-descr="El metal que se usa para hacer joyeria">
+            <abbr title="Rhodium">Ro</abbr>
+        </li>
+        <li class="martal" data-id="46" data-sim="Pd" data-name="Paladio" data-descr="Es usado para hacer mofles para autos">
+            <abbr title="Palladium">Pd</abbr>
+        </li>
+        <li class="metal" data-id="47" data-sim="Ag" data-name="Plata" data-descr="Es un metal color plata que se usa para joyeria">
+            <abbr title="Silver">Ag</abbr>
+        </li>
+        <li class="metal" data-id="48" data-sim="Cd" data-name="Cadmio" data-descr="Es usado para baterias reutilisables">
+            <abbr title="Cadmium">Cd</abbr>
+        </li>
+        <li class="metal" data-id="49" data-sim="In" data-name="Indio" data-descr="Se puede usar para hacer bitaminas">
+            <abbr title="Indium">In</abbr>
+        </li>
+        <li class="metal" data-id="50" data-sim="Sn" data-name="Estaño" data-descr="Es usado para soladra">
+            <abbr title="Tin">Sn</abbr>
+        </li>
+        <li class="metalloid" data-id="51" data-sim="Sb" data-name="Antonio" data-descr="Se puede usar para hacer baterias de automovil">
+            <abbr title="Antimony">Sb</abbr>
+        </li>
+        <li class="metalloid" data-id="52" data-sim="Te" data-name="Telurio" data-descr="Es usado para hacer SDs">
+            <abbr title="Tellurium">Te</abbr>
+        </li>
+        <li class="diatomic-nonmetal" data-id="53" data-sim="I" data-name="Yodo" data-descr="Es usada para ambitos medicos">
+            <abbr title="Iodine">I</abbr>
+        </li>
+        <li class="noble-gas" data-id="54" data-sim="Ni" data-name="Xenon" data-descr="Es usado para dar color a los focos led">
+            <abbr title="Xenon">Xe</abbr>
+        </li>
+        <li class="alkali" data-id="55" data-sim="Cs" data-name="Cesio" data-descr="Es usado para hacer vidrio y ceramica">
+            <abbr title="Caesium">Cs</abbr>
+        </li>
+        <li class="alkaline" data-id="56" data-sim="Ba" data-name="Bario" data-descr="Es usado para las radiografias">
+            <abbr title="Barium">Ba</abbr>
+        </li>
+        <li class="lanthanide" data-id="57" data-sim="La" data-name="Lantano" data-descr="Es usado para hacer lentes y lentes de camara">
+            <abbr title="Lanthanum">La</abbr>
+        </li>
+        <li id="cerium" class="lanthanide" data-id="58" data-sim="Ce" data-name="Cerio" data-descr="Es un elemento flamable usado en mecheros">
+             <abbr title="Cerium">Ce</abbr>
+        </li>
+        <li class="lanthanide" data-id="59" data-sim="Pr" data-name="Praseodimio" data-descr="Es usado para hacer propulsores para aviones">
+            <abbr title="Praseodymium">Pr</abbr>
+        </li>
+        <li class="lanthanide" data-id="60" data-sim="Nd" data-name="Neodimio" data-descr="Es un elemento magnetico">
+            <abbr title="Neodymium">Nd</abbr>
+        </li>
+        <li class="lanthanide" data-id="61" data-sim="Pm" data-name="Prometio" data-descr="Es un elemento radioactivo que se usa en marca pasos">
+            <abbr title="Promethium">Pm</abbr>
+        </li>
+        <li class="lanthanide" data-id="62" data-sim="Sm" data-name="Samario" data-descr="Es usado para piesas automotrices">
+            <abbr title="Samarium">Sm</abbr>
+        </li>
+        <li class="lanthanide" data-id="63" data-sim="Eu" data-name="Bario" data-descr="Es usado para las radiografias">
+            <abbr title="Europium">Eu</abbr>
+        </li>
+        <li class="lanthanide" data-id="64" data-sim="Gb" data-name="Gadolino" data-descr="Es usado para hacer memorias de computadoras">
+            <abbr title="Gadolinium">Gd</abbr>
+        </li>
+        <li class="lanthanide" data-id="65" data-sim="Eu" data-name="Terbio" data-descr="Es usado para las luces fluorecentes">
+            <abbr title="Terbium">Td</abbr>
+        </li>
+        <li class="lanthanide" data-id="66" data-sim="Dy" data-name="Disprosio" data-descr="Es usado para hacer discos duros">
+            <abbr title="Dysprosium">Dy</abbr>
+        </li>
+        <li class="lanthanide" data-id="67" data-sim="Ho" data-name="Holmio" data-descr="Es usado para crear catalizadores">
+            <abbr title="Holmium">Ho</abbr>
+        </li>
+        <li class="lanthanide" data-id="68" data-sim="Er" data-name="Erbio" data-descr="Es usado para hacer flitos de fotografias">
+            <abbr title="Erbium">Er</abbr>
+        </li>
+        <li class="lanthanide" data-id="69" data-sim="Tm" data-name="Tulio" data-descr="Es usado en maquinas de rayos x">
+            <abbr title="Thulium">Tm</abbr>
+        </li>
+        <li class="lanthanide" data-id="70" data-sim="Yb" data-name="Iterbio" data-descr="Es usado como fuente de radiasion alternativo para los rayos x">
+            <abbr title="Ytterbium">Yb</abbr>
+        </li>
+        <li class="lanthanide" data-id="71" data-sim="Lu" data-name="Lutecio" data-descr="Es usado para el trataminto de tumores en adultos">
+            <abbr title="Lutetium">Lu</abbr>
+        </li>  
+        <li id="hafnium" data-id="72" data-sim="Hf" data-name="Hafnio" data-descr="Es usado para el combustible de cohetes">
+            <abbr title="Hafnium">Hf</abbr>
+        </li>
+        <li class="metal" data-id="73" data-sim="Ta" data-name="Tantalio" data-descr="Es usado para hacer componetes tecnologicos">
+            <abbr title="Tantalum">Ta</abbr>
+        </li>
+        <li class="metal" data-id="74" data-sim="W" data-name="Tungsteno" data-descr="Es usado en los alambes de los focos">
+            <abbr title="Tungsten">W</abbr>
+        </li>
+        <li class="metal" data-id="75" data-sim="Re" data-name="Renio" data-descr="Se puede usar en lubricantes para automovil">
+            <abbr title="Rhenium">Re</abbr>
+        </li>
+        <li class="metal" data-id="76" data-sim="OS" data-name="Osmio" data-descr="Es de lo que estan echos los grifos de la casa y las puntas de las plumas">
+            <abbr title="Osmium">Os</abbr>
+        </li> 
+        <li class="metal" data-id="77" data-sim="Ir" data-name="Iridio" data-descr="Es de lo que estan echas sierta bujias">
+            <abbr title="Iridium">Ir</abbr>
+        </li>
+        <li class="metal" data-id="78" data-sim="Pt" data-name="Platino" data-descr="Es usado como joyeria">
+            <abbr title="Platinum">Pt</abbr>
+        </li>
+        <li class="metla" data-id="79" data-sim="Au" data-name="Oro" data-descr="Es usado como joyeria y sircuitos electronicos">
+            <abbr title="Gold">Au</abbr>
+        </li>
+        <li class="metal" data-id="80" data-sim="Hg" data-name="Mercurio" data-descr="Es usado en los termometros">
+            <abbr title="Mercury">Hg</abbr>
+        </li>
+        <li class="metal" data-id="81" data-sim="Tl" data-name="Talio" data-descr="Es usado">
+            <abbr title="Thallium">Tl</abbr>
+        </li>
+        <li>
+            <abbr title="Lead">Pb</abbr>
+        </li>
+        <li>
+            <abbr title="Bismuth">Bi</abbr>
+        </li>
+        <li>
+            <abbr title="Polonium">Po</abbr>
+        </li>
+        <li class="metalloid">
+            <abbr title="Astatine">At</abbr>
+        </li>
+        <li class="noble-gas">
+            <abbr title="Radon">Rn</abbr>
+        </li>
+        <li class="alkali">
+            <abbr title="Francium">Fr</abbr>
+        </li>
+        <li class="alkaline">
+            <abbr title="Radium">Ra</abbr>
+        </li>
+        <li class="actinide">
+            <abbr title="Actinium">Ac</abbr>
+        </li>
+        <li class="actinide" id="thorium" >
+            <abbr title="Thorium">Th</abbr>
+        </li>
+        <li class="actinide">
+            <abbr title="Protactinium">Pa</abbr>
+        </li>
+        <li class="actinide">
+            <abbr title="Uranium">U</abbr>
+        </li>
+        <li class="actinide">
+            <abbr title="Neptunium">Np</abbr>
+        </li>
+        <li class="actinide">
+            <abbr title="Plutonium">Up</abbr>
+        </li>
+        <li class="actinide">
+            <abbr title="Americium">Am</abbr>
+        </li>
+        <li class="actinide">
+            <abbr title="Curium">Cm</abbr>
+        </li>
+        <li class="actinide">
+            <abbr title="Berkelium">Bk</abbr>
+        </li>
+        <li class="actinide">
+            <abbr title="Californium">Cf</abbr>
+        </li>
+        <li class="actinide">
+            <abbr title="Einsteinium">Es</abbr>
+        </li>
+        <li class="actinide">
+            <abbr title="Fermium">Fm</abbr>
+        </li>
+        <li class="actinide">
+            <abbr title="Mendelevium">Md</abbr>
+        </li>
+        <li class="actinide">
+            <abbr title="Nobelium">No</abbr>
+        </li>
+        <li class="actinide">
+            <abbr title="Lawrencium">Lr</abbr>
+        </li>
+        <li id="rutherfordium">
+            <abbr title="Rutherfordium">Rf</abbr>
+        </li>
+        <li>
+            <abbr title="Dubnium">Db</abbr>
+        </li>
+        <li>
+            <abbr title="Seaborgium">Sg</abbr>
+        </li>
+        <li>
+            <abbr title="Bohrium">Bh</abbr>
+        </li>
+        <li>
+            <abbr title="Hassium">Hs</abbr>
+        </li>
+        <li class="unknown">
+            <abbr title="Meitnerium">Mt</abbr>
+        </li>
+        <li class="unknown">
+            <abbr title="Darmstadtium">Ds</abbr>
+        </li>
+        <li class="unknown">
+            <abbr title="Roentgenium">Rg</abbr>
+        </li>
+        <li>
+            <abbr title="Copernicium">Cn</abbr>
+        </li>
+        <li class="unknown">
+            <abbr title="Nihonium">Cn</abbr>
+        </li>
+        <li class="unknown">
+            <abbr title="Flerovium">Fl</abbr>
+        </li>
+        <li class="unknown">
+            <abbr title="Moscovium">Mc</abbr>
+        </li>
+        <li class="unknown">
+            <abbr title="Livermorium">Lv</abbr>
+        </li>
+        <li class="unknown">
+            <abbr title="Tennessine">Ts</abbr>
+        </li>
+        <li class="unknown">
+            <abbr title="Oganesson">Og</abbr>
+        </li>
+        </ol>
+    
+        <script src="./js/script.js"></script>
+</body>
+</html>
